@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37e00f7c43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                <i class="fas fa-bars-staggered" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sandeep Reddy</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user4.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, 
+                        laudantium! Quas recusandae eligendi assumenda rerum illo alias,
+                        sunt remeum debitis atque provident dolor inventore iusto placeat
+                        fuga aliquid doloribus</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Aggregated By 68% Percentage</li>
+                            <li><span>MPC</span><br>Aggregated By 88% Percentage</li>
+                            <li><span>SSC</span><br>Aggregated By 82% Percentage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut consequatur ratione excepturi mollitia consectetur temporibus unde molestiae, fugiat quam ullam nihil animi explicabo cupiditate ea dolores hic sed provident.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-simple"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut consequatur ratione excepturi mollitia consectetur temporibus unde molestiae, fugiat quam ullam nihil animi explicabo cupiditate ea dolores hic sed provident.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut consequatur ratione excepturi mollitia consectetur temporibus unde molestiae, fugiat quam ullam nihil animi explicabo cupiditate ea dolores hic sed provident.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="Work 1">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects you to talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="Work 2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="Work 3">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>The app connects you to talented people around the world. Download it from the play store.</p>
+                        <a href="#"><i class="fas fa-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fas fa-paper-plane"></i>Contact@example.com</p>
+                    <p><i class="fas fa-square-phone"></i>8639943976</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="sandeepreddy.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>Copyright Sandeep. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+    <script>
+        function openmenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
